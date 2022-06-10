@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className='pl-10 md:pl-12 bg-[#0F4A7B] pt-10 h-screen'>
+    <div className='pl-10 md:pl-12 bg-[#0F4A7B] pt-10 h-80'>
       <div className='relative'>
         <h1 className='text-3xl md:text-4xl text-white font-bold'>
           Find your dream job
