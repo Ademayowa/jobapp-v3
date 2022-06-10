@@ -22,12 +22,9 @@ function MobileNav({ open, setOpen }) {
     >
       <div className='header' />
       <div className='flex flex-col px-10'>
-        <Link href='/upcoming'>
-          <a
-            className='text-xl font-medium my-3'
-            onClick={() => setOpen(!open)}
-          >
-            Latest Movies
+        <Link href='/#top'>
+          <a className='text-xl font-light my-3' onClick={() => setOpen(!open)}>
+            Post Jobs
           </a>
         </Link>
       </div>
@@ -47,12 +44,6 @@ export default function Navbar() {
         onClick={() => router.push('/')}
       >
         Find jobs
-        {/* <Image
-          src={`/images/logo.png`}
-          width={150}
-          height={150}
-          objectFit='contain'
-        /> */}
       </a>
 
       <div className='w-9/12 flex justify-end items-center md:ml-auto'>
