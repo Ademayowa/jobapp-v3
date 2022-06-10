@@ -21,7 +21,7 @@ export default function Search() {
         />
       </div>
 
-      <div className='flex items-center px-8'>
+      <div className='flex items-center'>
         <button className='rounded-lg bg-red-500 px-4 py-2 text-white font-light'>
           Search
         </button>
