@@ -3,7 +3,7 @@ import { jobs } from '../data';
 
 export default function Jobs() {
   return (
-    <div className='grid grid-cols-8 gap-7 px-10 md:px-12 mx-10 mt-20'>
+    <div className='grid grid-cols-8 gap-x-7 px-10 md:px-12 mx-10 mt-20'>
       {jobs.map((job) => (
         <div
           key={job.id}
