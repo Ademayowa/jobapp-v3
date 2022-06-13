@@ -32,3 +32,23 @@ export const jobs = [
       'The ideal candidate should be able to work with designers, back-end developers and with front-end web technologies',
   },
 ];
+
+export const details = [
+  {
+    id: 1,
+    text: 'In this role, you will be responsible for developing and implementing user interface components using React.js concepts and workflow such as Redux, Flux, and Webpack. You will also be responsible for profiling and improving front-end performance and documenting our front-end codebase',
+    qualification: [
+      'Minimum Qualification: Degree',
+      'Experience Level: Senior level',
+      'Experience Length: 5 years',
+    ],
+    requirements: [
+      '5+ years experience of front-end related (HTML5 + JS + CSS3) development work experience, familiar with mobile application development',
+      'Proficient in JavaScript / Typescript, mastering technologies such as HTML, CSS, DOM, AJAX, etc., can quickly complete the established interactive design functions; At least 4 years experience is required.',
+      'Experience Length: 5 years',
+      'Thorough understanding of React.js and its core principles',
+      'Experience with popular React.js workflows (such as Flux or Redux)',
+      'Familiarity with RESTful API’s',
+    ],
+  },
+];

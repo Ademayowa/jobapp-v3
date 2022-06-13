@@ -2,7 +2,7 @@ import { SearchIcon, LocationMarkerIcon } from '@heroicons/react/outline';
 
 export default function Search() {
   return (
-    <div className='flex flex-col md:flex-row justify-between bg-white -mt-10       shadow-lg rounded-lg mx-12 px-5 py-10 md:p-5'>
+    <div className='flex flex-col md:flex-row justify-between bg-white -mt-10 shadow-lg rounded-lg mx-12 px-5 py-10 md:p-5'>
       <div className='flex items-center space-x-2'>
         <SearchIcon className='hidden md:block h-5 w-5 text-sky-500' />
         <input

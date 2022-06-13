@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import JobDetails from '@/components/JobDetails';
 import Jobs from '@/components/Jobs';
 import Search from '@/components/Search';
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Search />
       <Jobs />
+      <JobDetails />
     </div>
   );
 }
