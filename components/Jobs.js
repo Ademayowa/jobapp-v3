@@ -1,14 +1,13 @@
 import { LocationMarkerIcon } from '@heroicons/react/outline';
-// import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { jobs } from '../data';
 
-export default function Jobs({ services }) {
+export default function Jobs({ job }) {
   const router = useRouter();
 
   return (
     <div className='grid grid-cols-8 gap-x-7 px-10 md:px-12 mx-10 mt-20'>
-      {services.map((job) => (
+      {job.map((job) => (
         <div
           onClick={() => router.push(`/job/${job.slug}`)}
           key={job.id}
