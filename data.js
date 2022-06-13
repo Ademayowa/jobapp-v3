@@ -2,6 +2,7 @@ export const jobs = [
   {
     id: 1,
     role: 'Frontend developer',
+    slug: 'frontend-developer',
     salary: '$3k-$7k',
     location: 'Yaba, Lagos',
     description:
@@ -10,6 +11,7 @@ export const jobs = [
   {
     id: 2,
     role: 'Backed developer',
+    slug: 'backend-developer',
     salary: '$4k-$8k',
     location: 'Yaba, Lagos',
     description:
@@ -18,6 +20,7 @@ export const jobs = [
   {
     id: 3,
     role: 'UI/UX designer',
+    slug: 'designer',
     salary: '$3k-$7k',
     location: 'Yaba, Lagos',
     description:
@@ -26,6 +29,7 @@ export const jobs = [
   {
     id: 4,
     role: 'Blockain developer',
+    slug: 'blockain-developer',
     salary: '$3k-$7k',
     location: 'Yaba, Lagos',
     description:
@@ -33,19 +37,21 @@ export const jobs = [
   },
 ];
 
-export const details = [
+export const job = [
   {
     id: 1,
+    role: 'Frontend developer',
+    location: 'England UK',
     text: 'In this role, you will be responsible for developing and implementing user interface components using React.js concepts and workflow such as Redux, Flux, and Webpack. You will also be responsible for profiling and improving front-end performance and documenting our front-end codebase',
     qualification: [
       'Minimum Qualification: Degree',
       'Experience Level: Senior level',
       'Experience Length: 5 years',
     ],
+    title: 'Job Description/Requirements',
     requirements: [
-      '5+ years experience of front-end related (HTML5 + JS + CSS3) development work experience, familiar with mobile application development',
-      'Proficient in JavaScript / Typescript, mastering technologies such as HTML, CSS, DOM, AJAX, etc., can quickly complete the established interactive design functions; At least 4 years experience is required.',
-      'Experience Length: 5 years',
+      'At least 3years experience of front-end related development work experience',
+      'Proficient in JavaScript/Typescript',
       'Thorough understanding of React.js and its core principles',
       'Experience with popular React.js workflows (such as Flux or Redux)',
       'Familiarity with RESTful API’s',

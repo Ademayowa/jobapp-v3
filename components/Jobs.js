@@ -1,13 +1,18 @@
 import { LocationMarkerIcon } from '@heroicons/react/outline';
+// import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { jobs } from '../data';
 
-export default function Jobs() {
+export default function Jobs({ services }) {
+  const router = useRouter();
+
   return (
     <div className='grid grid-cols-8 gap-x-7 px-10 md:px-12 mx-10 mt-20'>
-      {jobs.map((job) => (
+      {services.map((job) => (
         <div
+          onClick={() => router.push(`/job/${job.slug}`)}
           key={job.id}
-          className='col-span-10 lg:col-span-4 mx-auto rounded-lg shadow-md my-5 bg-white p-7'
+          className='col-span-10 lg:col-span-4 mx-auto rounded-lg shadow-md my-5 bg-white p-7 cursor-pointer'
         >
           <div className='flex items-center text-blueColor font-bold'>
             <h2 className='flex flex-1 text-blueColor text-2xl font-bold'>
