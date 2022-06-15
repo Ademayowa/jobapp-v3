@@ -39,11 +39,11 @@ export default function SingleJob({ job }) {
       <hr className='border-b border-red-400 mx-10' />
 
       <div className='px-10 md:mx-10 md:px-12 py-5 text-grayColor'>
-        <div className='mt-5 text-sm md:text-base !leading-9'>
+        <div className='mt-5 text-sm md:text-base !md:leading-9'>
           <p>{job.text}</p>
           <h4 className='my-4 font-bold'>{job.info}</h4>
           {job.qualification.map((qualification, index) => (
-            <ul key={index} className='flex items-center space-x-3'>
+            <ul key={index} className='flex items-center space-x-4'>
               <BsChevronDoubleRight className='text-black' />
               <li>{qualification}</li>
             </ul>
@@ -52,7 +52,7 @@ export default function SingleJob({ job }) {
           <>
             <h4 className='my-4 font-bold'>{job.title}</h4>
             {job.requirements.map((requirement, index) => (
-              <ul key={index} className='flex items-center space-x-2'>
+              <ul key={index} className='flex items-center space-x-4'>
                 <BsChevronDoubleRight className='text-black' />
                 <li>{requirement}</li>
               </ul>
