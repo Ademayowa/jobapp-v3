@@ -10,16 +10,16 @@ export default function SingleJob({ job }) {
           <h2 className='text-blueColor font-bold text-2xl mt-2'>{job.role}</h2>
           <div className='flex items-center mt-2 space-x-1'>
             <LocationMarkerIcon className='w-5 h-5 text-blue-500' />
-            <p className='text-[#3E3E40]'>{job.location}</p>
+            <p className='text-grayColor'>{job.location}</p>
           </div>
-          <button className='mt-2 rounded-md bg-blueColor px-5 py-2.5 text-white font-bold'>
+          <button className='mt-2 rounded bg-blueColor px-5 py-2.5 text-white font-bold'>
             Apply for this job
           </button>
         </div>
       </div>
       <hr className='border-b border-red-400 mx-10' />
 
-      <div className='px-10 mx-10 md:px-12 py-5 text-[#3E3E40]'>
+      <div className='px-10 mx-10 md:px-12 py-5 text-grayColor'>
         <div className='md:w-8/12 mt-5 text-sm md:text-base !leading-9'>
           <p>{job.text}</p>
           {job.qualification.map((qualification, index) => (
