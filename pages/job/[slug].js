@@ -38,7 +38,7 @@ export default function SingleJob({ job }) {
       </div>
       <hr className='border-b border-red-400 mx-10' />
 
-      <div className='px-10 mx-10 md:px-12 py-5 text-grayColor'>
+      <div className='px-10 md:mx-10 md:px-12 py-5 text-grayColor'>
         <div className='mt-5 text-sm md:text-base !leading-9'>
           <h4 className='my-4 font-bold'>{job.info}</h4>
           <p>{job.text}</p>
