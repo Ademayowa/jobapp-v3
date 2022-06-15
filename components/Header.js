@@ -43,7 +43,7 @@ export default function Navbar() {
         className='flex items-center cursor-pointer'
         onClick={() => router.push('/')}
       >
-        Find jobs
+        Find Gigs
       </a>
 
       <div className='w-9/12 flex justify-end items-center md:ml-auto'>
