@@ -40,8 +40,8 @@ export default function SingleJob({ job }) {
 
       <div className='px-10 md:mx-10 md:px-12 py-5 text-grayColor'>
         <div className='mt-5 text-sm md:text-base !leading-9'>
-          <h4 className='my-4 font-bold'>{job.info}</h4>
           <p>{job.text}</p>
+          <h4 className='my-4 font-bold'>{job.info}</h4>
           {job.qualification.map((qualification, index) => (
             <ul key={index} className='flex items-center space-x-3'>
               <BsChevronDoubleRight className='text-black' />
