@@ -14,22 +14,24 @@ export default function Jobs({ job }) {
           className='col-span-10 lg:col-span-4 mx-auto rounded-lg shadow-md my-5 bg-white p-7 cursor-pointer'
         >
           <div className='flex items-center text-blueColor font-bold'>
-            <h2 className='flex flex-1 text-blueColor text-2xl font-bold'>
+            <h2 className='flex flex-1 text-blueColor text-lg md:text-2xl font-bold'>
               {job.role}
             </h2>
             <p>{job.salary}</p>
           </div>
 
-          <div className='flex items-center mt-2.5'>
-            <LocationMarkerIcon className='h-5 w-5 text-sky-500' />
-            <p className='text-[#3E3E40] text-lg'>{job.location}</p>
+          <div className='flex items-center space-x-1 mt-2.5'>
+            <LocationMarkerIcon className='h-5 w-5 text-sky-500 -ml-1' />
+            <p className='text-grayColor text-base md:text-lg'>
+              {job.location}
+            </p>
           </div>
-          <p className='text-[#3E3E40] text-sm mt-2.5 w-3/4'>
+          <p className='text-grayColor text-base mt-2.5 !w-full md:w-3/4 leading-8'>
             {job.description}
           </p>
 
-          <div className='flex justify-end mt-2.5'>
-            <button className='rounded-lg bg-red-500 px-4 py-2 text-white font-light'>
+          <div className='flex mt-2.5'>
+            <button className='rounded bg-red-500 px-5 py-2 text-white font-light'>
               View job
             </button>
           </div>

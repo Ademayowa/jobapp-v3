@@ -22,7 +22,7 @@ export default function Search() {
       </div>
 
       <div className='flex flex-auto md:flex-none items-center mx-1 md:mx-0'>
-        <button className='flex flex-auto justify-center rounded-md bg-red-500 px-5 py-2.5 text-white font-bold'>
+        <button className='flex flex-auto justify-center rounded bg-red-500 px-5 py-2.5 text-white font-bold'>
           Find jobs
         </button>
       </div>
