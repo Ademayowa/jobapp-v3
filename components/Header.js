@@ -24,7 +24,12 @@ function MobileNav({ open, setOpen }) {
       <div className='flex flex-col px-10'>
         <Link href='/#top'>
           <a className='text-xl font-light my-3' onClick={() => setOpen(!open)}>
-            Post Jobs
+            Home
+          </a>
+        </Link>
+        <Link href='/#top'>
+          <a className='text-xl font-light my-3' onClick={() => setOpen(!open)}>
+            About Us
           </a>
         </Link>
       </div>
@@ -72,8 +77,8 @@ export default function Navbar() {
         </div>
 
         <div className='hidden md:flex text-base font-light'>
-          <NavLink to='/#top'>Jobs</NavLink>
-          <NavLink to='/#top'>Post Job</NavLink>
+          <NavLink to='/#top'>Home</NavLink>
+          <NavLink to='/#top'>About Us</NavLink>
         </div>
       </div>
     </nav>

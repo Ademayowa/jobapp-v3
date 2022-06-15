@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className='pl-10 md:pl-12 bg-blueColor pt-10 h-72 lg:h-96'>
-      <div className='relative'>
+      <div className='relative lg:pt-5'>
         <h1 className='text-3xl lg:text-6xl text-white font-bold lg:w-6/12 !leading-tight'>
           The Easiest Way To Get Your New Job.
         </h1>
