@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 export default function SingleJob({ job }) {
   return (
-    <div className='my-10 w-4/5 mx-auto shadow-lg bg-white rounded-lg'>
-      <div className='px-10 mx-10 md:px-12 py-5'>
+    <div className='my-10 shadow-lg bg-white rounded-lg'>
+      <div className='px-10 md:mx-10 md:px-12 py-5'>
         <div className='my-5'>
           <Link href='/'>
             <a>
