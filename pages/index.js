@@ -3,24 +3,26 @@ import Hero from '@/components/Hero';
 import Jobs from '@/components/Jobs';
 import Search from '@/components/Search';
 import SectionTitle from '@/components/SectionTitle';
-import { jobs } from '../data';
+import { API_URL } from '@/config/index';
 
-export default function Home({ job }) {
+export default function Home({ jobs }) {
+  console.log(jobs);
   return (
     <div className='bg-[#F9FBFD]  h-fit'>
       <Header />
       <Hero />
       <Search />
       <SectionTitle title='Latest Jobs' />
-      <Jobs job={job} />
+      <Jobs jobs={jobs} />
     </div>
   );
 }
 
-export const getStaticProps = async () => {
-  const job = jobs;
+export async function getStaticProps() {
+  const res = await fetch(`${API_URL}/api/jobs`);
+  const jobs = await res.json();
 
   return {
-    props: { job },
+    props: { jobs: jobs.data },
   };
-};
+}
