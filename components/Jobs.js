@@ -6,7 +6,7 @@ export default function Jobs({ job }) {
   const router = useRouter();
 
   return (
-    <div className='grid grid-cols-8 gap-x-7 px-10 md:px-12 md:mx-10 mt-20'>
+    <div className='grid grid-cols-8 gap-x-7 px-10 md:px-12 md:mx-10'>
       {job.map((job) => (
         <div
           onClick={() => router.push(`/job/${job.slug}`)}

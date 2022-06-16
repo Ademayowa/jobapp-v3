@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Jobs from '@/components/Jobs';
 import Search from '@/components/Search';
+import SectionTitle from '@/components/SectionTitle';
 import { jobs } from '../data';
 
 export default function Home({ job }) {
@@ -10,6 +11,7 @@ export default function Home({ job }) {
       <Header />
       <Hero />
       <Search />
+      <SectionTitle title='Latest Jobs' />
       <Jobs job={job} />
     </div>
   );
